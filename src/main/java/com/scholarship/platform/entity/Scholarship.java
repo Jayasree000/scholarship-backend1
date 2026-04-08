@@ -22,6 +22,7 @@ public class Scholarship {
     private LocalDate deadline;
     private String eligibilityCriteria;
     private String category; // MERIT, NEED_BASED, SPORTS, etc.
+    @Column(name = "scholarship_status")
     private String status; // ACTIVE, CLOSED
 
     @ManyToOne

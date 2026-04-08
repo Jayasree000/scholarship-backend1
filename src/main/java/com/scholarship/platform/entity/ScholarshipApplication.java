@@ -20,6 +20,7 @@ public class ScholarshipApplication {
     private Scholarship scholarship;
 
     private LocalDateTime appliedAt;
+    @Column(name = "application_status")
     private String status; // PENDING, APPROVED, REJECTED
 
     @Column(columnDefinition = "TEXT")
